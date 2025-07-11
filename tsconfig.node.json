@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "composite": true, 
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler", // Bundler mode (appropriate for Node with bundling)
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+ // Prevent emitting files from node-related configuration
+    "jsx": "react-jsx", // Set JSX support if using React
+    "strict": false, // Disable strict mode for node environment (optional)
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": false,
+    "types": [],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["vite.config.ts", "src"] // Include specific files for this configuration
+}
